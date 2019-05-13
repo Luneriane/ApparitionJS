@@ -7,22 +7,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="menuContainer">
+    <main id="mainContainer">
         <div id="logo"><img src="./LogoHandyWeb.png"></div>
-        <a class="menus" id="menuA" onclick="myAnim('menuA')">Menu A</a>
-        <a class="menus" id="menuB" onclick="myAnim('menuB')"><h2>Menu B</h2></a>
-        <a class="menus" id="menuC" onclick="myAnim('menuC')"><h2>Menu C</h2></a>
-        <a class="menus" id="menuD" onclick="myAnim('menuD')"><h2>Menu D</h2></a>
+        <section id="sectionA" class=" hoovable" onclick="myAnim('#sectionA')">
+            <h2 id="titleA">Section A</h2>
+            <div id="contentA">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+            </div>
+        </section>
+        <section id="sectionB" class=" hoovable" onclick="myAnim('#sectionB')">
+            <h2>Section B</h2>
+            <div id="contentB">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+            </div>
+        </section>
+        <section id="sectionC" class=" hoovable" onclick="myAnim('#sectionC')">
+            <h2>Section C</h2>
+            <div id="contentC">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+            </div>
+        </section>
+        <section id="sectionD" class=" hoovable" onclick="myAnim('#sectionD')">
+            <h2>Section D</h2>
+            <div id="contentD">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
+            </div>
+        </section>
     </div>
-    <section id="sectionA">
-        <h2>Section A</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur exercitationem itaque recusandae unde harum quidem mollitia ipsa qui, voluptates quia? Dicta nesciunt facere commodi quo. Accusamus dolorum debitis delectus rem?</p>
-    </section>
-    <section id="sectionB"><h2>Section B</h2></section>
-    <section id="sectionC"><h2>Section C</h2></section>
-    <section id="sectionD"><h2>Section D</h2></section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="apparitionJS.js"></script>

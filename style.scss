@@ -1,32 +1,28 @@
-body {
+* {                         //Pour tout réinitialiser
     margin: 0;
     padding: 0;
-    background-color: bisque;
     box-sizing: border-box;
 }
 
-#menuContainer {
+#mainContainer {            //Contient toutes les sections
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
-    .menus {
+    section {               //Règles communes à toutes les sections
         display: block;
         position: absolute;
         width: 50%;
         height: 50%;
-        line-height: 50vh;
-        font-size: 2.5em;
-        font-weight: bold;
-        text-align: center;
-
-        &:hover {        
-            width: 51%;
-            height: 51%;
-            z-index: 2;
-        }
+        text-align: justify;
     }
-    #logo {
+    .hoovable:hover {        //Survol du menu principal
+        width: 51%;
+        height: 51%;
+        z-index: 2;
+    }
+
+    #logo {                 //Logo du menu principal
         position: absolute;
         width: 107px;
         height: 177px;
@@ -43,41 +39,37 @@ body {
             border: solid 0.2em purple;
         }
     }
-    #menuA {
+    h2 {                    //Titres des sections
+        width: 100%;
+        margin-top: 30%;
+        text-align: center;
+    }
+    #contentA, #contentB, #contentC, #contentD {    //Contenu suivant le titre
+        overflow: scroll;
+        height: 0;
+    }
+    #sectionA {
         top: 0;
         left: 0;
         background-color: lightblue;
         border: solid 2px blue;
     }
-    #menuB {
+    #sectionB {
         top: 0;
         right: 0;
         background-color: pink;
         border: solid 2px red;
     }
-    #menuC {
+    #sectionC {
         bottom: 0;
         left: 0;
         background-color: lemonchiffon;
         border: solid 2px yellow;
     }
-    #menuD {
+    #sectionD {
         bottom: 0;
         right: 0;
         background-color: aquamarine;
         border: solid 2px green;
     }
-}
-
-section {
-    position: absolute;
-    display: none;
-    width: 100%;
-    height: 100vh;
-    background-color: cornflowerblue;
-}
-
-h2 {
-    width: 100%;
-    text-align: center;
 }

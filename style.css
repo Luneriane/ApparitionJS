@@ -1,35 +1,31 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  background-color: bisque;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-#menuContainer {
+#mainContainer {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
-#menuContainer .menus {
+#mainContainer section {
   display: block;
   position: absolute;
   width: 50%;
   height: 50%;
-  line-height: 50vh;
-  font-size: 2.5em;
-  font-weight: bold;
-  text-align: center;
+  text-align: justify;
 }
 
-#menuContainer .menus:hover {
+#mainContainer .hoovable:hover {
   width: 51%;
   height: 51%;
   z-index: 2;
 }
 
-#menuContainer #logo {
+#mainContainer #logo {
   position: absolute;
   width: 107px;
   height: 177px;
@@ -45,48 +41,46 @@ body {
   border-radius: 5em;
 }
 
-#menuContainer #logo:hover {
+#mainContainer #logo:hover {
   border: solid 0.2em purple;
 }
 
-#menuContainer #menuA {
+#mainContainer h2 {
+  width: 100%;
+  margin-top: 30%;
+  text-align: center;
+}
+
+#mainContainer #contentA, #mainContainer #contentB, #mainContainer #contentC, #mainContainer #contentD {
+  overflow: scroll;
+  height: 0;
+}
+
+#mainContainer #sectionA {
   top: 0;
   left: 0;
   background-color: lightblue;
   border: solid 2px blue;
 }
 
-#menuContainer #menuB {
+#mainContainer #sectionB {
   top: 0;
   right: 0;
   background-color: pink;
   border: solid 2px red;
 }
 
-#menuContainer #menuC {
+#mainContainer #sectionC {
   bottom: 0;
   left: 0;
   background-color: lemonchiffon;
   border: solid 2px yellow;
 }
 
-#menuContainer #menuD {
+#mainContainer #sectionD {
   bottom: 0;
   right: 0;
   background-color: aquamarine;
   border: solid 2px green;
-}
-
-section {
-  position: absolute;
-  display: none;
-  width: 100%;
-  height: 100vh;
-  background-color: cornflowerblue;
-}
-
-h2 {
-  width: 100%;
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
